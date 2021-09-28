@@ -33,7 +33,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: https://github.com/NazimAitali/tip-calculator-app.git
-- Live Site URL: https://tip-calculator-app.netlify.app/
+- Live Site URL: https://tip-calculator-app-mentor.netlify.app/
 
 ## My process
 
