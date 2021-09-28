@@ -1,0 +1,680 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap");
+html,
+body,
+p,
+ol,
+ul,
+li,
+dl,
+dt,
+dd,
+blockquote,
+figure,
+fieldset,
+legend,
+textarea,
+pre,
+iframe,
+hr,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+ul {
+  list-style: none;
+}
+
+button,
+input,
+select {
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+img,
+video {
+  height: auto;
+  max-width: 100%;
+}
+
+iframe {
+  border: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td,
+th {
+  padding: 0;
+}
+
+/*****COLORS*****/
+/*****FONT*****/
+/*****FONT-SIZE-SCREEN****/
+/*****FONT-SIZE-MOBILE****/
+/*****SCREEN*****/
+body {
+  width: 100vw;
+  height: 100vh;
+  font-family: "Space Mono", monospace;
+  color: #00494d;
+  background-color: #c5e4e7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.Title-global-container {
+  width: 100%;
+  height: 29%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.Title {
+  width: 50%;
+  height: 43%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: column;
+  font-size: calc(0.12 * 10vmax);
+  font-weight: 700;
+  color: #3e6465;
+}
+
+span {
+  letter-spacing: 7px;
+}
+
+.Tip-global-container {
+  width: 100%;
+  height: 71%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: row;
+}
+
+.Tip-global-contente {
+  width: 55%;
+  height: 75%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  border-radius: 25px;
+  background-color: white;
+}
+
+.Section-result-container, .Section-data-container {
+  width: 47%;
+  height: 87%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.Section-data-container {
+  width: 45%;
+  height: 75%;
+}
+
+.Green-back {
+  border-radius: 25px;
+  background-color: #00494d;
+}
+
+.Bill-container, .People-container {
+  width: 100%;
+  height: 20%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.Tip-container {
+  width: 100%;
+  height: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+label {
+  width: 100%;
+  font-size: calc(0.08 * 10vmax);
+  color: #3e6465;
+}
+
+.Input-value {
+  width: 90%;
+  height: 60%;
+  border-radius: 5px;
+  background-color: #f4fafa;
+  text-align: right;
+  padding-right: 2%;
+  color: #00494d;
+  font-weight: 600;
+  font-size: calc(0.1 * 10vmax);
+  outline: none;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+}
+.Input-value:focus, .Input-value:hover {
+  border: 2px solid #26c5ad;
+}
+
+.Dollars {
+  background: url("../images/icon-dollar.svg") no-repeat;
+  background-position: 3% 50%;
+  padding-left: 8%;
+  background-size: 3%;
+}
+
+.Tip-content {
+  width: 100%;
+  height: 60%;
+  display: grid;
+  grid-template-columns: 31% 31% 31%;
+  grid-template-rows: 50% 50%;
+}
+
+.items {
+  width: 90%;
+  height: 70%;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  font-weight: 600;
+  font-size: calc(0.12 * 10vmax);
+  margin: 1%;
+  background-color: #00494d;
+  color: white;
+  justify-self: flex-start;
+  align-self: center;
+  cursor: pointer;
+  border: none;
+}
+.items:hover {
+  background-color: #a1e8e0;
+  color: #00494d;
+}
+
+.Activate {
+  background-color: #26c5ad;
+}
+
+.Costum {
+  background-color: #f4fafa;
+  color: #00494d;
+  text-align: right;
+  outline: none;
+  border: none;
+}
+.Costum:hover {
+  background-color: #f4fafa;
+  border: 2px solid #26c5ad;
+}
+.Costum::placeholder {
+  text-align: center;
+}
+
+.Nbr {
+  width: 89%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+
+.Nbr-label {
+  width: 40%;
+}
+
+.Message {
+  width: 40%;
+  font-size: calc(0.08 * 10vmax);
+  text-align: end;
+  color: orangered;
+  display: none;
+}
+
+.Message-border {
+  border: 1px solid orangered;
+}
+.Message-border:hover {
+  border: 1px solid orangered;
+}
+
+.Error {
+  display: block;
+  color: orangered;
+}
+
+.Person {
+  background: url("../images/icon-person.svg") no-repeat;
+  background-position: 3% 50%;
+  padding-left: 8%;
+  background-size: 3%;
+}
+
+.Result-container {
+  width: 80%;
+  height: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.Result-content {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.Amount {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.Amount-title {
+  color: white;
+  font-size: calc(0.1 * 10vmax);
+}
+
+.Amount-persone {
+  color: #7f9c9f;
+  font-size: calc(0.08 * 10vmax);
+}
+
+.Tip-amount, .Total-amount {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: row;
+  color: #26c5ad;
+  font-size: calc(0.25 * 10vmax);
+  font-weight: 600;
+}
+
+.Btn-container {
+  width: 80%;
+  height: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  flex-direction: row;
+}
+
+.Btn-content {
+  width: 100%;
+  height: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  border-radius: 5px;
+  background-color: #26c5ad;
+  font-size: calc(0.1 * 10vmax);
+  font-weight: 600;
+  cursor: pointer;
+}
+.Btn-content:hover {
+  background-color: #a1e8e0;
+}
+
+.Disabled {
+  background-color: #0d696e;
+  cursor: none;
+}
+.Disabled:hover {
+  background-color: #0d696e;
+}
+
+.attribution {
+  font-size: calc(0.1 * 10vmax);
+  position: absolute;
+  top: 90%;
+}
+
+/*******************DESKTOP 1440PX******************/
+@media only screen and (max-width: 1440px) {
+  .Tip-content {
+    height: 52%;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 53% 53%;
+  }
+
+  .Tip-global-container {
+    height: 70%;
+  }
+
+  .Tip-global-contente {
+    width: 64%;
+    height: 67%;
+    justify-content: space-evenly;
+  }
+
+  .Section-result-container, .Section-data-container {
+    width: 45%;
+  }
+
+  .Section-data-container {
+    width: 45%;
+    height: 82%;
+  }
+
+  .Title {
+    height: 48%;
+    font-size: calc(0.17 * 10vmax);
+  }
+
+  span {
+    letter-spacing: 10px;
+    margin-left: 2%;
+  }
+
+  label {
+    font-size: calc(0.1 * 10vmax);
+    font-weight: 600;
+  }
+
+  .Bill-container,
+.People-container {
+    width: 92%;
+    align-items: center;
+  }
+
+  .Bill-container label, .People-container label {
+    height: 40%;
+  }
+
+  .Tip-container label {
+    height: 0%;
+  }
+
+  .Green-back {
+    border-radius: 17px;
+  }
+
+  .Tip-container {
+    width: 95%;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .Input-value {
+    width: 95%;
+    font-size: calc(0.17 * 10vmax);
+  }
+
+  .items {
+    width: 93%;
+    height: 83%;
+    margin: 4%;
+    font-size: calc(0.17 * 10vmax);
+  }
+
+  .Btn-container {
+    height: 37%;
+  }
+
+  .Btn-content {
+    height: 33%;
+    font-size: calc(0.17 * 10vmax);
+  }
+
+  .Result-container {
+    height: 48%;
+  }
+
+  .Amount-title {
+    font-size: calc(0.12 * 10vmax);
+  }
+
+  .Amount-persone {
+    font-size: calc(0.1 * 10vmax);
+  }
+
+  .Tip-amount,
+.Total-amount {
+    font-size: calc(0.3 * 10vmax);
+  }
+
+  .Nbr {
+    width: 100%;
+  }
+
+  .Dollars {
+    height: 50%;
+  }
+}
+/*******************MOBILE 375PX******************/
+@media only screen and (max-width: 600px) {
+  main {
+    height: 933px;
+  }
+
+  .Tip-global-container {
+    width: 100%;
+    height: 84%;
+  }
+
+  .Tip-global-contente {
+    width: 100%;
+    height: 100%;
+    justify-content: space-evenly;
+    flex-direction: column;
+    overflow: auto;
+  }
+
+  .Title-global-container {
+    height: 15%;
+    align-items: center;
+  }
+
+  .Section-result-container, .Section-data-container {
+    width: 86%;
+    height: 33%;
+  }
+
+  .Section-data-container {
+    width: 87%;
+    height: 56%;
+  }
+
+  .Title {
+    width: 95%;
+    justify-content: center;
+    font-size: calc(0.6 * 10vmin);
+  }
+
+  span {
+    margin-left: 3%;
+  }
+
+  .Tip-container label {
+    height: 3%;
+  }
+
+  label {
+    font-size: calc(0.4 * 10vmin);
+    font-weight: 600;
+    height: 40%;
+  }
+
+  .Input-value {
+    width: 83%;
+    height: 68%;
+    font-size: calc(0.7 * 10vmin);
+  }
+
+  .items {
+    width: 88%;
+    height: 80%;
+    font-size: calc(0.6 * 10vmin);
+    margin: 0%;
+  }
+
+  .Tip-content {
+    height: 68%;
+    grid-template-columns: 53% 53%;
+    grid-template-rows: 35% 35% 35%;
+  }
+
+  .Message {
+    width: 30%;
+    font-size: calc(0.3 * 10vmin);
+  }
+
+  .Nbr {
+    width: 100%;
+    height: 40%;
+  }
+
+  .Nbr-label {
+    width: 50%;
+  }
+
+  .Amount-title {
+    font-size: calc(0.5 * 10vmin);
+  }
+
+  .Amount-persone {
+    font-size: calc(0.3 * 10vmin);
+  }
+
+  .Tip-amount,
+.Total-amount {
+    font-size: calc(0.8 * 10vmin);
+  }
+
+  .Result-container {
+    width: 88%;
+    height: 56%;
+    justify-content: space-evenly;
+  }
+
+  .Result-content {
+    height: 45%;
+  }
+
+  .Bill-container,
+.People-container {
+    width: 95%;
+  }
+
+  .Bill-container label, .People-container label {
+    height: 30%;
+  }
+
+  .Btn-container {
+    width: 88%;
+    height: 24%;
+    align-items: flex-end;
+  }
+
+  .Btn-content {
+    height: 67%;
+    font-size: calc(0.5 * 10vmin);
+  }
+
+  .Info-mobile {
+    width: 12%;
+    height: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    font-size: calc(0.5 * 10vmin);
+    background-color: #a1e8e0;
+    position: absolute;
+    top: 94%;
+    left: 43%;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.5s ease-in;
+  }
+
+  .attribution {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    border-radius: 15px;
+    font-size: calc(0.3 * 10vmin);
+    background-color: white;
+    height: 5%;
+    left: -100%;
+    top: 94%;
+    cursor: pointer;
+    transition: 0.5s ease-in;
+  }
+
+  .OpenAttr {
+    left: 2%;
+  }
+
+  .CloseBtn {
+    left: -50%;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

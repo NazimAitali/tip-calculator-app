@@ -1,0 +1,32 @@
+/*****COLORS*****/
+$Very-dark-cyan: hsl(183, 100%, 15%);
+$Dark-grayish-cyan-one: hsl(182, 24%, 32%);
+$Dark-grayish-cyan: hsl(184, 14%, 56%);
+$Light-grayish-cyan: hsl(185, 41%, 84%);
+$Light-grayish-cyan-white: hsl(189, 41%, 97%);
+$grayish-cyan-white: hsl(171, 68%, 46%);
+$Grayish-cyan-btn: hsl(173, 61%, 77%);
+$Grayish-cyan-btn-disable: hsl(183, 79%, 24%);
+$White: hsl(0, 0%, 100%);
+/*****FONT*****/
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap");
+$SpaceMono: "Space Mono", monospace;
+$Inputs-font: 24px;
+/*****FONT-SIZE-SCREEN****/
+$XSmall-Font: calc(0.08 * 10vmax);
+$Small-Font: calc(0.1 * 10vmax);
+$Small-Intermediate-Font: calc(0.12 * 10vmax);
+$Very-Medium-Font: calc(0.17 * 10vmax);
+$Medium-Font: calc(0.2 * 10vmax);
+$Medium-Intermediate-Font: calc(0.25 * 10vmax);
+$Large-Font: calc(0.3 * 10vmax);
+/*****FONT-SIZE-MOBILE****/
+$XSmall-Font-Mobile: calc(0.3 * 10vmin);
+$Small-Font-Mobile: calc(0.4 * 10vmin);
+$Medium-Font-Mobile: calc(0.5 * 10vmin);
+$Large-Font-Mobile: calc(0.6 * 10vmin);
+$Large-Intermediate-Font-Mobile: calc(0.7 * 10vmin);
+$XLarge-Font-Mobile: calc(0.8 * 10vmin);
+/*****SCREEN*****/
+$Screen-Mobile: 600px;
+$Screen-Desktop: 1440px;

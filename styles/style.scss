@@ -1,0 +1,440 @@
+@import "./Reset.scss";
+@import "./libs/mixin.scss";
+@import "./libs/Variable.scss";
+
+body {
+  width: 100vw;
+  height: 100vh;
+  font-family: $SpaceMono;
+  color: $Very-dark-cyan;
+  background-color: $Light-grayish-cyan;
+  @include flex(flex, center, center, column);
+  // background-image: url("../design/desktop-design-completed.jpg");
+}
+main {
+  @include dimension(100, 100);
+  @include flex(flex, center, center, column);
+  // opacity: 0.5;
+}
+.Title-global-container {
+  @include dimension(100, 29);
+  @include flex(flex, center, center, row);
+}
+.Title {
+  @include dimension(50, 43);
+  @include flex(flex, flex-end, center, column);
+  font-size: $Small-Intermediate-Font;
+  font-weight: 700;
+  color: $Dark-grayish-cyan-one;
+}
+span {
+  letter-spacing: 7px;
+}
+.Tip-global-container {
+  @include dimension(100, 71);
+  @include flex(flex, center, flex-start, row);
+}
+.Tip-global-contente {
+  @include dimension(55, 75);
+  @include flex(flex, center, center, row);
+  @include radius(25px);
+  background-color: $White;
+}
+
+.Section-result-container {
+  @include dimension(47, 87);
+  @include flex(flex, center, center, column);
+}
+.Section-data-container {
+  @include dimension(45, 75);
+  @extend .Section-result-container;
+}
+.Green-back {
+  @include radius(25px);
+  background-color: $Very-dark-cyan;
+}
+.Bill-container {
+  @include dimension(100, 20);
+  @include flex(flex, space-evenly, flex-start, column);
+}
+.People-container {
+  @extend .Bill-container;
+}
+.Tip-container {
+  @include dimension(100, 60);
+  @include flex(flex, center, flex-start, column);
+}
+label {
+  width: 100%;
+  font-size: $XSmall-Font;
+  color: $Dark-grayish-cyan-one;
+}
+
+.Input-value {
+  @include dimension(90, 60);
+  @include radius(5px);
+  background-color: $Light-grayish-cyan-white;
+  text-align: right;
+  padding-right: 2%;
+  color: $Very-dark-cyan;
+  font-weight: 600;
+  font-size: $Small-Font;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+  &:focus,
+  &:hover {
+    border: 2px solid $grayish-cyan-white;
+  }
+}
+.Dollars {
+  background: url("../images/icon-dollar.svg") no-repeat;
+  background-position: 3% 50%;
+  padding-left: 8%;
+  background-size: 3%;
+}
+.Tip-content {
+  @include dimension(100, 60);
+  display: grid;
+  grid-template-columns: 31% 31% 31%;
+  grid-template-rows: 50% 50%;
+}
+.items {
+  @include dimension(90, 70);
+  @include radius(5px);
+  @include flex(flex, center, center, row);
+  font-weight: 600;
+  font-size: $Small-Intermediate-Font;
+  margin: 1%;
+  background-color: $Very-dark-cyan;
+  color: $White;
+  justify-self: flex-start;
+  align-self: center;
+  cursor: pointer;
+  border: none;
+  &:hover {
+    background-color: $Grayish-cyan-btn;
+    color: $Very-dark-cyan;
+  }
+}
+.Activate {
+  background-color: $grayish-cyan-white;
+}
+.Costum {
+  background-color: $Light-grayish-cyan-white;
+  color: $Very-dark-cyan;
+  text-align: right;
+  outline: none;
+  border: none;
+  &:hover {
+    background-color: $Light-grayish-cyan-white;
+    border: 2px solid $grayish-cyan-white;
+  }
+  &::placeholder {
+    text-align: center;
+  }
+}
+.Nbr {
+  width: 89%;
+  @include flex(flex, space-between, center, row);
+}
+.Nbr-label {
+  width: 40%;
+}
+.Message {
+  width: 40%;
+  font-size: $XSmall-Font;
+  text-align: end;
+  color: orangered;
+  display: none;
+}
+.Message-border {
+  border: 1px solid orangered;
+  &:hover {
+    border: 1px solid orangered;
+  }
+}
+.Error {
+  display: block;
+  color: orangered;
+}
+.Person {
+  background: url("../images/icon-person.svg") no-repeat;
+  background-position: 3% 50%;
+  padding-left: 8%;
+  background-size: 3%;
+}
+.Result-container {
+  @include dimension(80, 40);
+  @include flex(flex, center, center, column);
+}
+.Result-content {
+  @include dimension(100, 50);
+  @include flex(flex, center, center, row);
+}
+.Amount {
+  @include dimension(50, 100);
+  @include flex(flex, center, flex-start, column);
+}
+.Amount-title {
+  color: $White;
+  font-size: $Small-Font;
+}
+.Amount-persone {
+  color: $Dark-grayish-cyan;
+  font-size: $XSmall-Font;
+}
+.Tip-amount {
+  @include dimension(50, 100);
+  @include flex(flex, flex-end, center, row);
+  color: $grayish-cyan-white;
+  font-size: $Medium-Intermediate-Font;
+  font-weight: 600;
+}
+.Total-amount {
+  @extend .Tip-amount;
+}
+.Btn-container {
+  @include dimension(80, 40);
+  @include flex(flex, center, flex-end, row);
+}
+.Btn-content {
+  @include dimension(100, 25);
+  @include flex(flex, center, center, row);
+  @include radius(5px);
+  background-color: $grayish-cyan-white;
+  font-size: $Small-Font;
+  font-weight: 600;
+  cursor: pointer;
+  &:hover {
+    background-color: $Grayish-cyan-btn;
+  }
+}
+.Disabled {
+  background-color: $Grayish-cyan-btn-disable;
+  cursor: none;
+  &:hover {
+    background-color: $Grayish-cyan-btn-disable;
+  }
+}
+
+.attribution {
+  font-size: $Small-Font;
+  position: absolute;
+  top: 90%;
+}
+/*******************DESKTOP 1440PX******************/
+@media only screen and (max-width: $Screen-Desktop) {
+  .Tip-content {
+    height: 52%;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 53% 53%;
+  }
+  .Tip-global-container {
+    height: 70%;
+  }
+  .Tip-global-contente {
+    @include dimension(64, 67);
+    justify-content: space-evenly;
+  }
+  .Section-result-container {
+    width: 45%;
+  }
+  .Section-data-container {
+    @include dimension(45, 82);
+  }
+  .Title {
+    height: 48%;
+    font-size: $Very-Medium-Font;
+  }
+  span {
+    letter-spacing: 10px;
+    margin-left: 2%;
+  }
+  label {
+    font-size: $Small-Font;
+    font-weight: 600;
+  }
+  .Bill-container,
+  .People-container {
+    width: 92%;
+    align-items: center;
+  }
+  .Bill-container label {
+    height: 40%;
+  }
+  .Tip-container label {
+    height: 0%;
+  }
+  .Green-back {
+    border-radius: 17px;
+  }
+  .Tip-container {
+    width: 95%;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .Input-value {
+    width: 95%;
+    font-size: $Very-Medium-Font;
+  }
+  .items {
+    @include dimension(93, 83);
+    margin: 4%;
+    font-size: $Very-Medium-Font;
+  }
+  .Btn-container {
+    height: 37%;
+  }
+  .Btn-content {
+    height: 33%;
+    font-size: $Very-Medium-Font;
+  }
+  .Result-container {
+    height: 48%;
+  }
+  .Amount-title {
+    font-size: $Small-Intermediate-Font;
+  }
+  .Amount-persone {
+    font-size: $Small-Font;
+  }
+  .Tip-amount,
+  .Total-amount {
+    font-size: $Large-Font;
+  }
+  .Nbr {
+    width: 100%;
+  }
+  .Dollars {
+    height: 50%;
+  }
+}
+/*******************MOBILE 375PX******************/
+@media only screen and (max-width: $Screen-Mobile) {
+  main {
+    height: 933px;
+  }
+  .Tip-global-container {
+    @include dimension(100, 84);
+  }
+  .Tip-global-contente {
+    @include dimension(100, 100);
+    justify-content: space-evenly;
+    flex-direction: column;
+    overflow: auto;
+  }
+  .Title-global-container {
+    height: 15%;
+    align-items: center;
+  }
+  .Section-result-container {
+    @include dimension(86, 33);
+  }
+  .Section-data-container {
+    @include dimension(87, 56);
+  }
+  .Title {
+    width: 95%;
+    justify-content: center;
+    font-size: $Large-Font-Mobile;
+  }
+  span {
+    margin-left: 3%;
+  }
+  .Tip-container label {
+    height: 3%;
+  }
+  label {
+    font-size: $Small-Font-Mobile;
+    font-weight: 600;
+    height: 40%;
+  }
+  .Input-value {
+    @include dimension(83, 68);
+    font-size: $Large-Intermediate-Font-Mobile;
+  }
+  .items {
+    @include dimension(88, 80);
+    font-size: $Large-Font-Mobile;
+    margin: 0%;
+  }
+  .Tip-content {
+    height: 68%;
+    grid-template-columns: 53% 53%;
+    grid-template-rows: 35% 35% 35%;
+  }
+  .Message {
+    width: 30%;
+    font-size: $XSmall-Font-Mobile;
+  }
+  .Nbr {
+    @include dimension(100, 40);
+  }
+  .Nbr-label {
+    width: 50%;
+  }
+  .Amount-title {
+    font-size: $Medium-Font-Mobile;
+  }
+  .Amount-persone {
+    font-size: $XSmall-Font-Mobile;
+  }
+  .Tip-amount,
+  .Total-amount {
+    font-size: $XLarge-Font-Mobile;
+  }
+  .Result-container {
+    @include dimension(88, 56);
+    justify-content: space-evenly;
+  }
+  .Result-content {
+    height: 45%;
+  }
+
+  .Bill-container,
+  .People-container {
+    width: 95%;
+  }
+  .Bill-container label {
+    height: 30%;
+  }
+  .Btn-container {
+    @include dimension(88, 24);
+    align-items: flex-end;
+  }
+  .Btn-content {
+    height: 67%;
+    font-size: $Medium-Font-Mobile;
+  }
+  .Info-mobile {
+    @include dimension(12, 5);
+    @include flex(flex, center, center, row);
+    font-size: $Medium-Font-Mobile;
+    background-color: $Grayish-cyan-btn;
+    position: absolute;
+    top: 94%;
+    left: 43%;
+    @include radius(30px);
+    cursor: pointer;
+    transition: 0.5s ease-in;
+  }
+  .attribution {
+    @include flex(flex, center, center, row);
+    @include radius(15px);
+    font-size: $XSmall-Font-Mobile;
+    background-color: $White;
+    height: 5%;
+    left: -100%;
+    top: 94%;
+    cursor: pointer;
+    transition: 0.5s ease-in;
+  }
+  .OpenAttr {
+    left: 2%;
+  }
+  .CloseBtn {
+    left: -50%;
+  }
+}

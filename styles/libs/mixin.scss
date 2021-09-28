@@ -1,0 +1,30 @@
+@import "./function.scss";
+
+@mixin dimension($w, $h) {
+  width: 1% * strip-unit($w);
+  height: 1% * strip-unit($h);
+}
+
+@mixin flex($flex, $justify, $align, $direction) {
+  display: $flex;
+  justify-content: $justify;
+  align-items: $align;
+  flex-direction: $direction;
+}
+@mixin gird($col-start, $col-end, $row-start, $row-end) {
+  grid-column-start: $col-start;
+  grid-column-end: $col-end;
+  grid-row-start: $row-start;
+  grid-row-end: $row-end;
+}
+@mixin back($color, $img, $repeat, $positionX, $positionY, $size) {
+  background-color: $color;
+  background-image: $img;
+  background-repeat: $repeat;
+  background-position-x: $positionX;
+  background-position-y: $positionY;
+  background-size: $size;
+}
+@mixin radius($px) {
+  border-radius: $px;
+}
