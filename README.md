@@ -27,8 +27,8 @@ Users should be able to:
 
 ### Screenshot
 
-./screenshot-mobile-375px.png
-./screenshot-desktop-1440px.png
+![](https://github.com/NazimAitali/tip-calculator-app/blob/master/screenshot-desktop-1440px.png)
+![](https://github.com/NazimAitali/tip-calculator-app/blob/master/screenshot-mobile-375px.png)
 
 ### Links
 
